@@ -1,0 +1,83 @@
+@charset "UTF-8";
+#wrap{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and ( max-width: 1200px ) {
+  #wrap{
+    width: 100%;
+  }
+}
+
+/*
+z-index
+popup: 500
+layout: 300
+*/
+
+#lnb{
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  z-index: 300;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ff6a67
+}
+
+#lnb h1 a{
+  color: white;
+}
+
+#container{
+  padding-left: 300px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#login_menu{
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+#login_menu > ul{
+  float: right;
+  overflow: hidden;
+}
+
+#login_menu > ul > li{
+  float: left;
+  margin-left: 10px;
+}
+
+#login_menu > ul > li:first-child{
+  margin-left: 0;
+}
+
+#lnb .menu_tree_management{
+  background: transparent;
+  border: 0;
+}
+
+#lnb .menu_tree_management .title,
+#lnb .menu_tree_management input[type=checkbox] + label,
+.menu_tree_management .table_ctn .menu_tree .sub_menu > li{
+  color: white;
+}
+
+#lnb .menu_tree_management input[type=checkbox]:checked + label{
+  color: black;
+}
+
+#footer{
+  padding-left: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #f1f1f1;
+}
